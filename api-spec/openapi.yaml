@@ -1,0 +1,24 @@
+openapi: 3.0.3
+info:
+  title: Loopwish API
+  version: 0.1.0
+  description: |
+    Loopwish er en ønskeliste-app som lar deg dele ønsker med familie og venner.
+    Ønsk. Del. Få. Sammen.
+servers:
+  - url: https://api.loopwish.example
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok

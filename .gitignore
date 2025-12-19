@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Archives
+*.zip
+*.tar
+*.tar.gz

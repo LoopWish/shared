@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate YAML (best-effort)
+        run: |
+          python - <<'PY'
+          import sys, pathlib
+          try:
+            import yaml  # type: ignore
+          except Exception:
+            print('PyYAML not installed; skipping')
+            sys.exit(0)
+          for p in pathlib.Path('.').rglob('*.yml'):
+            yaml.safe_load(p.read_text(encoding='utf-8'))
+          for p in pathlib.Path('.').rglob('*.yaml'):
+            yaml.safe_load(p.read_text(encoding='utf-8'))
+          print('YAML parsed OK')
+          PY
