@@ -2,6 +2,15 @@
 
 This repository contains shared assets and specifications for Loopwish (design tokens, brand assets, API specs, docs).
 
+## Organization-wide standards (Loopwish)
+
+- Keep PRs small and reviewable; avoid drive-by refactors.
+- Do not commit secrets (API keys, tokens, credentials) or `.env` files.
+- Prefer secure-by-default changes; avoid logging sensitive data.
+- Update docs and specs when behavior changes.
+- Keep CI green and validate formats before opening a PR.
+- Follow the existing conventions; avoid breaking published paths.
+
 ## Goals
 
 - Keep assets and specs consistent, predictable, and easy to consume.
