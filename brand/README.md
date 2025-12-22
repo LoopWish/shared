@@ -12,5 +12,5 @@ Tagline: **Ønsk. Del. Få. Sammen.**
 
 ## Assets
 
-- Banner: `assets/logos/loopwish-banner.svg`
-- Logo: `assets/logos/loopwish-logo.svg`
+- Banner: `assets/logos/loopwish-banner.png`
+- Logo: `assets/logos/loopwish-logo.png`
