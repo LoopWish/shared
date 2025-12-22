@@ -28,6 +28,22 @@ This repository contains shared assets and specifications for Loopwish (design t
 - Ensure YAML/JSON is valid.
 - Prefer simple, portable formats (SVG/PNG, JSON, YAML, Markdown).
 
+## Git & GitHub procedure
+
+- `main` is protected: always work in a feature branch and open a PR.
+- Keep changes additive and paths stable (other repos link to exact asset paths).
+- If adding vendorable assets, update `docs/policies/asset-allowlist.md` in the same PR.
+- Merge via PR, then create/push a tag for consumers to pin:
+
+```bash
+git checkout main
+git pull --ff-only
+git tag -a vX.Y.Z -m "Release vX.Y.Z"
+git push origin vX.Y.Z
+```
+
+- Do not rewrite history on released tags.
+
 ## Safety
 
 - Do not add copyrighted assets without permission.
