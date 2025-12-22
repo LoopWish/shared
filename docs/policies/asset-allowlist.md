@@ -7,6 +7,8 @@ Denne allowlisten definerer hvilke filer/paths fra `shared` som er tillatt å ve
 - `design-tokens/tokens.json`
 - `assets/logos/loopwish-logo.svg`
 - `assets/logos/loopwish-banner.svg`
+- `assets/logos/loopwish-logo.png`
+- `assets/logos/loopwish-banner.png`
 
 ## Retningslinjer
 
