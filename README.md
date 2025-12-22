@@ -9,6 +9,7 @@ Dette repoet inneholder delte ressurser som design system, brand assets, design 
 ## Teknologi / innhold
 
 - Design tokens (JSON)
+- Design tokens guide (Markdown)
 - Brand assets (SVG/PNG)
 - API-spesifikasjoner (OpenAPI)
 - Dokumentasjon (Markdown)
